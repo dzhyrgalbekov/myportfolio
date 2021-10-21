@@ -45,7 +45,7 @@
 
 	<a href="gallery.html">Gallery</a>
 	<a href="aboutpage.html">About the owner</a>
-</h1>My name is Kubanych</h1>
+ 	</h1>My name is Kubanych</h1>
 	<h2> This is my homepage </h2>
 	<h3>This is my city</h3>
 	<img scr= "https://github.com/Kuba7443/Kuba7443/blob/main/images.jpeg"  width="600" height="500">
