@@ -48,7 +48,7 @@
  	</h1>My name is Kubanych</h1>
 	<h2> This is my homepage </h2>
 	<h3>This is my city</h3>
-	<img scr= "https://github.com/Kuba7443/Kuba7443/blob/main/images.jpeg"  width="600" height="500">
+	<img scr= "images.jpeg"  width="600" height="500">
 
 	<h3>My social media:</h3>
 	<div>Instagram: <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link" target="_blank">@kuba_dzh</a></div>
