@@ -48,7 +48,7 @@
  	</h1>My name is Kubanych</h1>
 	<h2> This is my homepage </h2>
 	<h3>This is my city</h3>
-	<img scr= "images.jpeg">
+	<img scr= "10-things-to-do-bishkek-kyrgyzstan-main-image-900.jpg">
 
 	<h3>My social media:</h3>
 	<div>Instagram: <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link" target="_blank">@kuba_dzh</a></div>
