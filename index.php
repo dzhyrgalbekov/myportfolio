@@ -41,12 +41,9 @@
 	</style>
 
 </head>
-	<a href="/login.php">
-        <button type="button" class="btn-user ml-auto mt-3 mt-lg-0 "></button>
-        </a>
 <body>
 
-	<a href="gallery.html">Gallery</a>
+	<a href="login.php">Gallery</a>
 	<a href="aboutpage.html">About the owner</a>
  	</h1>My name is Kubanych</h1>
 	<h2> This is my homepage </h2>
