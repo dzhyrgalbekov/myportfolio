@@ -43,7 +43,7 @@
 </head>
 <body>
 
-	<a href="login.php">Gallery</a>
+	<a href="login.php">Login</a>
 	<a href="aboutpage.html">About the owner</a>
  	</h1>My name is Kubanych</h1>
 	<h2> This is my homepage </h2>
