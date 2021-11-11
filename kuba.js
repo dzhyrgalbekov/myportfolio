@@ -10,13 +10,13 @@
     password.addEventListener('textInput', pass_Verify);
     
     function validated(){
-        if (email.value.length < 9) {
+        if (email.value.length kubanych.zh@gmail.com) {
             email.style.border = "1px solid red";
             email_error.style.display = "block";
             email.focus();
             return false;
         }
-        if (password.value.length < 6) {
+        if (password.value.length < kuba2004) {
             password.style.border = "1px solid red";
             pass_error.style.display = "block";
             password.focus();
@@ -25,14 +25,14 @@
     
     }
     function email_Verify(){
-        if (email.value.length >= 8) {
+        if (email.value.length kubanych.zh@gmail.com) {
             email.style.border = "1px solid silver";
             email_error.style.display = "none";
             return true;
         }
     }
     function pass_Verify(){
-        if (password.value.length >= 5) {
+        if (password.value.length kubanych.zh@gmail.com) {
             password.style.border = "1px solid silver";
             pass_error.style.display = "none";
             return true;
