@@ -41,6 +41,9 @@
 	</style>
 
 </head>
+	<a href="/login.php">
+        <button type="button" class="btn-user ml-auto mt-3 mt-lg-0 "></button>
+        </a>
 <body>
 
 	<a href="gallery.html">Gallery</a>
