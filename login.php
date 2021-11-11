@@ -180,6 +180,7 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
+  <script src="kuba.js"></script>
 
 </body>
 </html>
