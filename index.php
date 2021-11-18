@@ -1,58 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-    body {
-        background-color: lightblue;
-    }
-        
-    h1 {
-        color: white;
-        text-align: center;
-    }
-        
-    p {
-      font-family: verdana;
-      font-size: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My name is Kubanych</title>
 </head>
-<body>
-	
-	<title>Homepage web site</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-	<style type="text/css">
-	html, body {
-		height: 100%;
-		font-family: Roboto;
-	}
-	h2 {
-		color: green;
-	}
-	h3 {
-		color: red;
-	}
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	</style>
+    <body style="background-color: lightblue;"></body>
+    <h1 align="center">My name is Kubanych</h1>
+    <table style="width: 100%;">
+        <a href="login.php">Login</a>
 
-</head>
-<body>
-
-	<a href="login.php">Login</a>
-	
-	
-	<a href="aboutpage.html">About the owner</a>
- 	</h1>My name is Kubanych</h1>
-	<h2> This is my homepage </h2>
-	<h3>This is my city</h3>
-	<img src="08_bishkek.jpg" alt="Trulli" width="500" height="333">
-	<h3>My social media:</h3>
+          <tr>
+              <th>
+        <h2><p>I am 17 yers old</p>
+            <p>Phone number: 0500000000</p>
+            <p>My social media:</p>
 	<div>Instagram: <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link" target="_blank">@kuba_dzh</a></div>
-
-</body>
-</html>
+    <div>Whats App: <a href="https://www.whatsapp.com/" target="_blank">Log in</a></div>
+    <div>Facebook: <a href="https://www.facebook.com/" target="_blank">Log in</a></div>
+        </h2></th>
+          <th>
+              <p align="right"><img src="kg.jng" height="300" width="500" alt=""></p>
+          </th>
+          </tr>
+       </table>
+        
+    </body>
+    </html>
