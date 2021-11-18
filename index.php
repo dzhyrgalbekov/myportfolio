@@ -18,7 +18,7 @@
 	<div>Instagram: <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link" target="_blank">@kuba_dzh</a></div>
     <div>Whats App: <a href="https://www.whatsapp.com/" target="_blank">Log in</a></div>
     <div>Facebook: <a href="https://www.facebook.com/" target="_blank">Log in</a></div>
-		<a href="login.php">Login</a>
+		<a href="login.php">Login to website</a>
         </h2></th>
           <th>
               <p align="right"><img src="kg.jng" height="300" width="500" alt=""></p>
