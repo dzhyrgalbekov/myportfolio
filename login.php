@@ -18,6 +18,6 @@
 			<button type="submit">Login</button>
 		</form>
 	</div>	
-	<script src="kuba.js"></script>
+	<script src="login.js"></script>
 </body>
 </html>
