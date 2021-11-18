@@ -18,6 +18,6 @@
 			<button type="submit">Login</button>
 		</form>
 	</div>	
-	<script src="login.js"></script>
+	<script src="login2.js"></script>
 </body>
 </html>
