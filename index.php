@@ -14,6 +14,7 @@
               <th>
         <h2><p>I am 17 yers old</p>
             <p>Phone number: 0500000000</p>
+	    <p>Gmail address: kubanych.zh.u.04@gmail.com</p>
             <p>My social media:</p>
 	<div>Instagram: <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link" target="_blank">@kuba_dzh</a></div>
     <div>Whats App: <a href="https://www.whatsapp.com/" target="_blank">Log in</a></div>
