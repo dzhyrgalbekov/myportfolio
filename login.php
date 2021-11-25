@@ -1,23 +1,31 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Validated Login Form</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
 </head>
 <body>
-	<div class="container">
-		<h1 class="label">User Login</h1>
-		<form class="login_form" action="https://kubanych.herokuapp.com/" method="post" name="form" onsubmit="return validated()">
-			<div class="font">Email or Phone</div>
-			<input autocomplete="off" type="text" name="email">
-			<div id="email_error">Please fill up your Email or Phone</div>
-			<div class="font font2">Password</div>
-			<input type="password" name="password">
-			<div id="pass_error">Please fill up your Password</div>
-			<button type="submit">Login</button>
-		</form>
-	</div>	
-	<script src="login2.js"></script>
+  <center>
+  <h3>Login Here</h3>
+  <form action="" method="post">
+      <table>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="user" placeholder="Enter name Here"></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="user_pass" placeholder="Enter Password Here"></td>
+        </tr>
+        
+        <tr>
+           <td><input type="submit" name="submit" value="Login"></td>
+           <td><p>Not yet a Member? <a href="register.php">Register</a></p></td>
+        </tr>
+      </table>
+  </form>
+  
+  </center>
 </body>
 </html>
