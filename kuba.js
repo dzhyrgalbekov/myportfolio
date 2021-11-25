@@ -1,38 +1,59 @@
-var email = document.forms['form']['email'];
-var password = document.forms['form']['password'];
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
 
-var email_error = document.getElementById('email_error');
-var pass_error = document.getElementById('pass_error');
-
-email.addEventListener('textInput', email_Verify);
-password.addEventListener('textInput', pass_Verify);
-
-function validated(){
-	if (email.value.length < 9) {
-		email.style.border = "1px solid red";
-		email_error.style.display = "block";
-		email.focus();
-		return false;
-	}
-	if (password.value.length < 6) {
-		password.style.border = "1px solid red";
-		pass_error.style.display = "block";
-		password.focus();
-		return false;
-	}
-
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
 }
-function email_Verify(){
-	if (email.value.length >= 8) {
-		email.style.border = "1px solid silver";
-		email_error.style.display = "none";
-		return true;
-	}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
 }
-function pass_Verify(){
-	if (password.value.length >= 5) {
-		password.style.border = "1px solid silver";
-		pass_error.style.display = "none";
-		return true;
-	}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
 }
+
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
