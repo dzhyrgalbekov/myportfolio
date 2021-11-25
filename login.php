@@ -1,31 +1,31 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" and dir="Itr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-</head>
+    <meta charest="utf-8">
+    <titale> Interactive Login From</titale>
+    <script scr ="login2.js"> </script>
+
+
+
+
+
+</head>>
 <body>
-  <center>
-  <h3>Login Here</h3>
-  <form action="" method="post">
-      <table>
-        <tr>
-          <td>Username:</td>
-          <td><input type="text" name="user" placeholder="Enter name Here"></td>
-        </tr>
-        <tr>
-          <td>Password:</td>
-          <td><input type="password" name="user_pass" placeholder="Enter Password Here"></td>
-        </tr>
-        
-        <tr>
-           <td><input type="submit" name="submit" value="Login"></td>
-           <td><p>Not yet a Member? <a href="register.php">Register</a></p></td>
-        </tr>
-      </table>
-  </form>
-  
-  </center>
+<from class="box" action="login.html" method="POST">
+
+<h1>
+    login
+</h1>
+<form class="login_form" action="https://kubanych.herokuapp.com/" method="post" name="form" onsubmit="return validated()">
+<input type="text" name ="" placeholder="Enter Username" id="username">
+<input type="password" name ="" placeholder="Enter Password" id="password">
+<input type="submit" name ="" value="login" onclick="validate()">
+
+
+</from>>
+
+
 </body>
+
+
 </html>
