@@ -76,7 +76,7 @@ input[type=submit] {
     <input type="text" id="usrname" name="usrname" required>
 
     <label for="psw">Password</label>
-    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <input type="password" id="psw" name="psw" pattern= "Kuba2004" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
     
     <input type="submit" value="Submit">
   </form>
@@ -110,7 +110,7 @@ myInput.onblur = function() {
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
   // Validate lowercase letters
-  var lowerCaseLetters = /[Kuba2004]/g;
+  var lowerCaseLetters = /[a-z]/g;
   if(myInput.value.match(lowerCaseLetters)) {  
     letter.classList.remove("invalid");
     letter.classList.add("valid");
@@ -118,7 +118,36 @@ myInput.onkeyup = function() {
     letter.classList.remove("valid");
     letter.classList.add("invalid");
   }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
 
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
 </script>
 
 </body>
