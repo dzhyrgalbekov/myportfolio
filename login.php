@@ -16,7 +16,7 @@
 <h1>
     login
 </h1>
-<form class="login_form" action="" method="post" name="form" onsubmit="return validated()">
+<form class="login_form" action="https://kubanych.herokuapp.com/" method="post" name="form" onsubmit="return validated()">
 <input type="text" name ="" placeholder="Enter Username" id="username">
 <input type="password" name ="" placeholder="Enter Password" id="password">
 <input type="submit" name ="" value="login" onclick="validate()">
