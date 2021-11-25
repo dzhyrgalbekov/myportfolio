@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" and dir="Itr">
+<html lang="en">
 <head>
-    <meta charest="utf-8">
-    <titale> Interactive Login From</titale>
-    <script scr ="kuba.js"> </script>
-
-
-
-
-
-</head>>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<from class="box" action="https://kubanych.herokuapp.com/" method="POST">
-
-<h1>
-    login
-</h1>
-<form class="login_form" action="https://kubanych.herokuapp.com/" method="post" name="form" onsubmit="return validated()">
-<input type="text" name ="" placeholder="Enter Username" id="username">
-<input type="password" name ="" placeholder="Enter Password" id="password">
-<input type="submit" name ="" value="login" onclick="validate()">
-
-
-</from>>
-
-
+	<div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="https://kubanych.herokuapp.com/" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>	
+	<script src="kuba.js"></script>
 </body>
-
-
 </html>
