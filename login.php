@@ -130,7 +130,7 @@ myInput.onkeyup = function() {
   }
 
   // Validate numbers
-  var numbers = /[2,0,0,4]/g;
+  var numbers = /[2]/g;
   if(myInput.value.match(numbers)) {  
     number.classList.remove("invalid");
     number.classList.add("valid");
@@ -138,6 +138,23 @@ myInput.onkeyup = function() {
     number.classList.remove("valid");
     number.classList.add("invalid");
   }
+ var numbers = /[4]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+   var numbers = /[0]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
   
   // Validate length
   if(myInput.value.length >= 8) {
