@@ -110,7 +110,7 @@ myInput.onblur = function() {
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
   // Validate lowercase letters
-  var lowerCaseLetters = /[uba]/g;
+  var lowerCaseLetters = /[u,b,a]/g;
   if(myInput.value.match(lowerCaseLetters)) {  
     letter.classList.remove("invalid");
     letter.classList.add("valid");
@@ -130,7 +130,7 @@ myInput.onkeyup = function() {
   }
 
   // Validate numbers
-  var numbers = /[2004]/g;
+  var numbers = /[2,0,0,4]/g;
   if(myInput.value.match(numbers)) {  
     number.classList.remove("invalid");
     number.classList.add("valid");
