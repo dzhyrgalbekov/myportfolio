@@ -73,7 +73,7 @@ input[type=submit] {
 <div class="container">
   <form action="/action_page.php">
     <label for="usrname">Username</label>
-    <input type="text" id="usrname" name="usrname" pattern= "Kuba2004" required>
+    <input type="text" id="usrname" name="usrname" pattern= "Kubanych" required>
 
     <label for="psw">Password</label>
     <input type="password" id="psw" name="psw" pattern= "Kuba2004" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
