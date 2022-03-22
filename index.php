@@ -244,7 +244,7 @@
                     </div>
                     <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
                     <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <a href="login.php"><i class="fa fa-paper-plane"></i> SEND MESSAGE</a>
+                        <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link"><i class="fa fa-paper-plane"></i> SEND MESSAGE</a>
                     </button>
                 </form>
             </div>
