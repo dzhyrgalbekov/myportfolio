@@ -2,7 +2,7 @@
 <html>
 <title>My Portfolio</title>
     <head>
- 	<link rel="shortcut icon" href="1234.png" type="image/x-icon">
+ 	<link rel="shortcut icon" href="https://www.w3schools.com/w3images/p5.jpg" type="image/x-icon">
 	</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
