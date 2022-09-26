@@ -95,20 +95,6 @@ div {
 	
 	
 <body>
-	- var texts = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ': )'];
-- var number_of_particle = 12;
-
-- for (var i = 0; i < texts.length; i++)
-  .background(class="background" + i)
-.criterion
-  - for (var i = 0; i < texts.length; i++)
-    .text(class='text' + i) #{texts[i]}
-  - for (var i = 0; i < texts.length; i++)
-    .frame(class='frame' + i)
-  - for (var i = 0; i < texts.length; i++)
-    - for (var j = 0; j < number_of_particle; j++)
-      .particle(class="particle" + i + j)
-
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
@@ -177,6 +163,33 @@ div {
             Clients
         </div>
     </div>
+
+
+    <div class="xyz-in" xyz="down duration-10 ease-in-out-back">
+        <div class="phone xyz-in" xyz="fade down big rotate-right-45">
+            <div class="square-group" xyz="fade left stagger-1">
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+            </div>
+
+            <div class="group" xyz="fade left stagger-1">
+                <div class="skeleton-title xyz-in"></div>
+                <div class="skeleton-title2 xyz-in"></div>
+            </div>
+
+            <div class="circle-group" xyz="fade left stagger-1">
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+            </div>
+        </div>
+    </div>
+		
 
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
