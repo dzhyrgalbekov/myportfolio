@@ -9,20 +9,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-div {
-  background-color: red;
-  animation-name: example;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-}
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
 
-@keyframes example {
-  0%   {background-color: Gray;}
-  25%  {background-color: LightGray;}
-  50%  {background-color: Tomato;}
-  100% {background-color: hsla(9, 100%, 64%, 0.5);}
-}
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - AnimXYZ Example</title>
+  
+  
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@animxyz/core@0.1.1/dist/animxyz.min.css'>
+<style>
+
     body,
     h1,
     h2,
@@ -87,12 +87,7 @@ div {
         }
     }
 
-
-</style>
-	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@animxyz/core@0.1.1/dist/animxyz.min.css'>
-  
-<style>
-:root {
+    :root {
   --xyz-ease: cubic-bezier(.26,2.05,.84,.38);
 }
 
@@ -155,59 +150,51 @@ body {
   border-radius: 50%;
   background-color: #466BDA;
 }
+
+
 </style>
-
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
+<script>
+    window.console = window.console || function(t) {};
+  </script>
   
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  <body translate="no" >
+    <div class="xyz-in" xyz="down duration-10 ease-in-out-back">
+          <div class="phone xyz-in" xyz="fade down big rotate-right-45">
+              <div class="square-group" xyz="fade left stagger-1">
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+              </div>
   
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
-
-</head>
-
-<body translate="no" >
-  <div class="xyz-in" xyz="down duration-10 ease-in-out-back">
-        <div class="phone xyz-in" xyz="fade down big rotate-right-45">
-            <div class="square-group" xyz="fade left stagger-1">
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-            </div>
-
-            <div class="group" xyz="fade left stagger-1">
-                <div class="skeleton-title xyz-in"></div>
-                <div class="skeleton-title2 xyz-in"></div>
-            </div>
-
-            <div class="circle-group" xyz="fade left stagger-1">
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-                <div class="xyz-in square"></div>
-            </div>
-        </div>
-    </div>
+              <div class="group" xyz="fade left stagger-1">
+                  <div class="skeleton-title xyz-in"></div>
+                  <div class="skeleton-title2 xyz-in"></div>
+              </div>
   
+              <div class="circle-group" xyz="fade left stagger-1">
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+                  <div class="xyz-in square"></div>
+              </div>
+          </div>
+      </div>
+    
+    
+    
+    
   
-  
-  
-
-</body>
-
-</html>
-	
-	
-
+  </body>
 	
 	
 <body>
