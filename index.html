@@ -195,7 +195,7 @@ body {
     
   
   </body>
-	
+
 	
 <body>
     <!-- Navbar (sit on top) -->
@@ -262,8 +262,23 @@ body {
             BD
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">0+</span><br>
-            Clients
+            <span class="w3-xlarge">
+      <div id="clickdiv" >+0</div> 
+      <button onclick="countTracker()">Like</button> 
+      <script type="text/javascript">
+    
+          var clickCount = 0;
+          function countTracker() {
+              clickCount += 1;
+              document.getElementById("clickdiv").innerHTML = clickCount;
+              localStorage.setItem("count", clickCount);
+    
+          }
+          str_count = localStorage.getItem("count");
+          console.log(str_count);
+        </script>
+        </span>
+        <!--<br>Clients -->
         </div>
     </div>
 
