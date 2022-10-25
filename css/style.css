@@ -1,0 +1,127 @@
+body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #fff;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('https://www.w3schools.com/w3images/p5.jpg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+
+    :root {
+  --xyz-ease: cubic-bezier(.26,2.05,.84,.38);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: gray;
+}
+
+.phone {
+  background: white;
+  padding: 1.5em;
+  border-radius: 2em;
+  position: relative;
+  transform: rotateZ(-45deg);
+  box-shadow: -30px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.phone:before {
+  content: " ";
+  position: absolute;
+  background-color: gray;
+  border-radius: 1em;
+  padding: 0.5em;
+  width: 33%;
+  top: -5px;
+  left: 30%;
+}
+
+.square-group {
+  display: grid;
+  grid-template-areas: "square square" "square square";
+}
+.square-group .square {
+  padding: 3em;
+  margin: 0.6em;
+  border-radius: 0.8em;
+  background-color: gray;
+}
+
+.skeleton-title, .skeleton-title2 {
+  padding: 0.6em;
+  margin: 1em 0.3em;
+  border-radius: 0.8em;
+  background-color: gray;
+}
+
+.skeleton-title2 {
+  width: 60%;
+}
+
+.circle-group {
+  display: grid;
+  grid-template-areas: "circle circle circle" "circle circle circle";
+}
+.circle-group .square {
+  padding: 2em;
+  margin: 0.6em;
+  border-radius: 50%;
+  background-color: gray;
+}
