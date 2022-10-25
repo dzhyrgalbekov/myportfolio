@@ -1,170 +1,34 @@
 <!DOCTYPE html>
 <html>
 <title>My Portfolio</title>
-    <head>
+<head>
  	<link rel="shortcut icon" href="https://www.w3schools.com/w3images/parallax1.jpg" type="image/x-icon">
-	</head>
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@animxyz/core@0.1.1/dist/animxyz.min.css'>
 <meta name="apple-mobile-web-app-title" content="CodePen">
 
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<title>WebSite - MY Roetfolio</title>
 
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-
-
-  <title>WebSite - MY Roetfolio</title>
-  
-  
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@animxyz/core@0.1.1/dist/animxyz.min.css'>
-<style>
-
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lato", sans-serif;
-    }
-
-    body,
-    html {
-        height: 100%;
-        color: #fff;
-        line-height: 1.8;
-    }
-
-    /* Create a Parallax Effect */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-        background-image: url('https://www.w3schools.com/w3images/p5.jpg');
-        min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-        background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
-        min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-        background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
-        min-height: 400px;
-    }
-
-    .w3-wide {
-        letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
-    }
-
-    :root {
-  --xyz-ease: cubic-bezier(.26,2.05,.84,.38);
-}
-
-body {
-  margin: 0;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  background: gray;
-}
-
-.phone {
-  background: white;
-  padding: 1.5em;
-  border-radius: 2em;
-  position: relative;
-  transform: rotateZ(-45deg);
-  box-shadow: -30px 30px 0px rgba(0, 0, 0, 0.1);
-}
-.phone:before {
-  content: " ";
-  position: absolute;
-  background-color: gray;
-  border-radius: 1em;
-  padding: 0.5em;
-  width: 33%;
-  top: -5px;
-  left: 30%;
-}
-
-.square-group {
-  display: grid;
-  grid-template-areas: "square square" "square square";
-}
-.square-group .square {
-  padding: 3em;
-  margin: 0.6em;
-  border-radius: 0.8em;
-  background-color: gray;
-}
-
-.skeleton-title, .skeleton-title2 {
-  padding: 0.6em;
-  margin: 1em 0.3em;
-  border-radius: 0.8em;
-  background-color: gray;
-}
-
-.skeleton-title2 {
-  width: 60%;
-}
-
-.circle-group {
-  display: grid;
-  grid-template-areas: "circle circle circle" "circle circle circle";
-}
-.circle-group .square {
-  padding: 2em;
-  margin: 0.6em;
-  border-radius: 50%;
-  background-color: gray;
-}
-
-
-</style>
 <script>
-    window.console = window.console || function(t) {};
-  </script>
+  window.console = window.console || function(t) {};
+</script>
   
-    
-    
-    <script>
-    if (document.location.search.match(/type=embed/gi)) {
-      window.parent.postMessage("resize", "*");
-    }
-  </script>
-  <body translate="no" >
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+<body translate="no" >
     <div class="xyz-in" xyz="down duration-10 ease-in-out-back">
           <div class="phone xyz-in" xyz="fade down big rotate-right-45">
               <div class="square-group" xyz="fade left stagger-1">
@@ -190,14 +54,6 @@ body {
           </div>
       </div>
     
-    
-    
-    
-  
-  </body>
-
-	
-<body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
@@ -226,8 +82,7 @@ body {
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span
-                    class="w3-hide-small">WEBSITE</span> LOGO</span>
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
         </div>
     </div>
 
@@ -238,19 +93,15 @@ body {
 
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-user w3-margin-right"></i>My Name is Kubanych</b></p><br>
-                <img src="https://www.w3schools.com/w3images/parallax1.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
+                <p><b><i class="fa fa-user w3-margin-right"></i>My Name is Kubanych</b></p>
+                <img src="myphoto.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
                     width="500" height="333">
             </div>
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
                 <p>Welcome to my website.</p>
-                <p>About me - сочинение на английском языке
-                    My full name is Bushueva Valeria Dmitrievna. I was born in Moscow, Russia in 2002. I'm 11 years old. About my appearance, I'm tall and thin (probably), I have big blue eyes and blond hair. About my character, I am very friendly, but only with people that I think are quite good. I happen really impatient and curious, but I do not consider it a disadvantage. Do not know whether to write. I think I've told everything about myself. I do not think my life is boring because every day confronted with something new and interesting for me. For example: meeting new people at school or a meeting with the best friends.
-                    That's all!
-                    Goodbye!
-                    B. V. D.</p>
+                <p>My full name is Jyrgalbekov Kubanych. I was born in the city of Suusamyr, Kyrgyzstan in 2004. I'm 17 years old. As for my appearance, I'm tall and thin (probably), I have black eyes and black hair. As for my character, I am very friendly, but only with people whom I consider good enough. I can be very impatient and curious, but I do not consider this a disadvantage. I don't know whether to write. I think I've told everything about myself. I do not consider my life boring, because every day I come across something new and interesting for me. For example: meeting new people at university or meeting your best friends. It's all! Goodbye! bvd</p>
             </div>
      
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -266,18 +117,16 @@ body {
             <span class="w3-xlarge">19.11</span><br>
             BD
         </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">
-      <div id="clickdiv" >+0</div> 
-      <button onclick="countTracker()">Like</button> 
-      <script type="text/javascript">
-    
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">
+        <div id="clickdiv" >+0</div> 
+        <button onclick="countTracker()">Like</button> 
+        <script type="text/javascript">
           var clickCount = 0;
           function countTracker() {
               clickCount += 1;
               document.getElementById("clickdiv").innerHTML = clickCount;
               localStorage.setItem("count", clickCount);
-    
           }
           str_count = localStorage.getItem("count");
           console.log(str_count);
@@ -286,9 +135,6 @@ body {
         <!--<br>Clients -->
         </div>
     </div>
-
-
-    	
 
     <!-- Second Parallax Image with Portfolio Text -->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -299,8 +145,7 @@ body {
 
     <!-- Container (Portfolio Section) -->
     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">MY WORK</h3>
-        <br>
+        <h3 class="w3-center">MY WORK</h3><br>
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
@@ -370,14 +215,13 @@ body {
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
-                <img src="123.gif" class="w3-image w3-round" style="width:100%">
+                <img src="qrcod.gif" class="w3-image w3-round" style="width:100%">
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bishkek, KR<br>
                     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +996 709 62 11 40<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                    kubanych.zh.u.04@gmail.com<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kubanych.zh.u.04@gmail.com<br>
                 </div>
                 <p>You can come and to drink coffee <i class="fa fa-coffee"></i></p>
                 <form action="/action_page.php" target="_blank">
@@ -405,7 +249,6 @@ body {
             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook w3-hover-opacity"></i></a>
             <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
             <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
-    <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://dzhyrgalbekov.github.io/myportfolio/" target="_blank">Start now</a>
     <!-- Footer end. -->
     </footer>
 
@@ -427,7 +270,7 @@ body {
             } else {
                 navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
             }
-        }  x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+        x.className = x.className.replace(" w3-show", "");
+        }
+    
+</script>   
