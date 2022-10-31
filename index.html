@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <title>My Portfolio</title>
-<head>
- 	<link rel="shortcut icon" href="https://www.w3schools.com/w3images/parallax1.jpg" type="image/x-icon">
-</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
@@ -16,17 +13,10 @@
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@animxyz/core@0.1.1/dist/animxyz.min.css'>
 <meta name="apple-mobile-web-app-title" content="CodePen">
 
+<script src="js/script.js"></script>
+
 <title>WebSite - MY Roetfolio</title>
 
-<script>
-  window.console = window.console || function(t) {};
-</script>
-  
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
 
 <body translate="no" >
     <div class="xyz-in" xyz="down duration-10 ease-in-out-back">
@@ -56,35 +46,36 @@
     
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="#home" class="w3-bar-item w3-button">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i>
-            </a>
-        </div>
+      <div class="w3-bar" id="myNavbar">
+          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+              href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
+              <i class="fa fa-bars"></i>
+          </a>
+          <a href="#home" class="w3-bar-item w3-button">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+          <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+              <i class="fa fa-search"></i>
+          </a>
+      </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-        </div>
-    </div>
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+          <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+          <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+      </div>
+  </div>
 
-    <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-        </div>
-    </div>
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+          <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span
+                  class="w3-hide-small">WEBSITE</span> LOGO</span>
+      </div>
+  </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
@@ -117,23 +108,11 @@
             <span class="w3-xlarge">19.11</span><br>
             BD
         </div>
-    <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">
-        <div id="clickdiv" >+0</div> 
-        <button onclick="countTracker()">Like</button> 
-        <script type="text/javascript">
-          var clickCount = 0;
-          function countTracker() {
-              clickCount += 1;
-              document.getElementById("clickdiv").innerHTML = clickCount;
-              localStorage.setItem("count", clickCount);
-          }
-          str_count = localStorage.getItem("count");
-          console.log(str_count);
-        </script>
-        </span>
-        <!--<br>Clients -->
-        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">0+</span><br>
+          Clients
+      </div>
+  </div>
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
@@ -221,26 +200,34 @@
                 <div class="w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bishkek, KR<br>
                     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +996 709 62 11 40<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kubanych.zh.u.04@gmail.com<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kubanych.zh.u@gmail.com<br>
                 </div>
                 <p>You can come and to drink coffee <i class="fa fa-coffee"></i></p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <a href="https://instagram.com/kuba_dzh?utm_medium=copy_link"><i class="fa fa-paper-plane"></i> SEND MESSAGE</a>
-                    </button>
-                </form>
             </div>
         </div>
     </div>
+
+    <body onbeforeunload="return closingCode()">
+      <link rel="stylesheet" href="css/game.css">
+        <script src="js/game.js"></script>
+      <div class='topbar'>
+      </div>
+        <center class='center'>
+          <h1 id='total'>LB: 0</h1>
+          <h5 id="click" style="font-family:trebuchet MS;">LB/click: 1 | LB/sec: 0</h5>
+          <img class="round" src="clicker.jpg" width="150" onclick='clicked()'></img>
+          <br><br>
+          <button id='upgrade' class="round" onclick='upgrade("upgrade")' style="font-family:courier;">0-main upgrade: 15</button>
+          <br><br>
+          <button id='cat' class="round" onclick='upgrade("clicker cat")' style="font-family:courier;">0-clicker cat: 25 | +1/sec</button>
+          <br><br>
+          <button id='worker' class="round" onclick='upgrade("worker")' style="font-family:courier;">0-worker: 250 | +15/sec</button><br><br>
+          <button class="settings" onclick="save()">Save</button>
+          <button class="settings" onclick="load()">Load</button>
+          <button class="settings" onclick="reset()">Reset</button><br><br>
+        </center>
+      </link>
+    </body>
 
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
@@ -252,25 +239,4 @@
     <!-- Footer end. -->
     </footer>
 
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Change style of navbar on scroll
-        window.onscroll = function () { myFunction() };
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-        x.className = x.className.replace(" w3-show", "");
-        }
     
-</script>   
