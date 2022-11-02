@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>My Portfolio</title>
+<link rel="icon" type="image/x-icon" href="img/icon.avif">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
@@ -8,8 +9,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@animxyz/core@0.1.1/dist/animxyz.min.css'>
 <link rel="stylesheet" href="css/game.css">
 <meta name="apple-mobile-web-app-title" content="CodePen">
@@ -21,63 +20,63 @@
 
 
 <body translate="no" >
-    <div class="xyz-in" xyz="down duration-10 ease-in-out-back">
-          <div class="phone xyz-in" xyz="fade down big rotate-right-45">
-              <div class="square-group" xyz="fade left stagger-1">
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-              </div>
-  
-              <div class="group" xyz="fade left stagger-1">
-                  <div class="skeleton-title xyz-in"></div>
-                  <div class="skeleton-title2 xyz-in"></div>
-              </div>
-  
-              <div class="circle-group" xyz="fade left stagger-1">
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-                  <div class="xyz-in square"></div>
-              </div>
-          </div>
-      </div>
-    
+    <div lass="xyz-in" xyz="down duration-10 ease-in-out-back">
+        <div class="phone xyz-in" xyz="fade down big rotate-right-45">
+            <div class="square-group" xyz="fade left stagger-1">
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+            </div>
+
+            <div class="group" xyz="fade left stagger-1">
+                <div class="skeleton-title xyz-in"></div>
+                <div class="skeleton-title2 xyz-in"></div>
+            </div>
+
+            <div class="circle-group" xyz="fade left stagger-1">
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+                <div class="xyz-in square"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-      <div class="w3-bar" id="myNavbar">
-          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-              href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
-              <i class="fa fa-bars"></i>
-          </a>
-          <a href="#home" class="w3-bar-item w3-button">HOME</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-          <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-              <i class="fa fa-search"></i>
-          </a>
-      </div>
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0);" onclick="toggleFunction()" title="Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
 
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-          <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-          <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-      </div>
-  </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+</div>
 
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-          <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span
-                  class="w3-hide-small">WEBSITE</span> LOGO</span>
-      </div>
-  </div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" >
+    <div class="w3-display-middle" style="white-space:nowrap;" id="home">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span
+                class="w3-hide-small">WEBSITE</span> LOGO</span>
+    </div>
+</div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
@@ -88,15 +87,14 @@
             <div class="w3-col m6 w3-center w3-padding-large">
                 <p><b><i class="fa fa-user w3-margin-right"></i>My Name is Kubanych</b></p>
                 <img src="img/myphoto.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
-                    width="500" height="333">
+                    width="300" height="200">
             </div>
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
                 <p>Welcome to my website.</p>
-                <p>My full name is Jyrgalbekov Kubanych. I was born in the city of Suusamyr, Kyrgyzstan in 2004. I'm 17 years old. As for my appearance, I'm tall and thin (probably), I have black eyes and black hair. As for my character, I am very friendly, but only with people whom I consider good enough. I can be very impatient and curious, but I do not consider this a disadvantage. I don't know whether to write. I think I've told everything about myself. I do not consider my life boring, because every day I come across something new and interesting for me. For example: meeting new people at university or meeting your best friends. It's all! Goodbye! bvd</p>
+                <p>My full name is Dzhyrgalbekov Kubanych. I was born in the city of Suusamyr, Kyrgyzstan in 2004. I'm 17 years old. As for my appearance, I'm tall and thin (probably), I have black eyes and black hair. As for my character, I am very friendly, but only with people whom I consider good enough. I can be very impatient and curious, but I do not consider this a disadvantage. I don't know whether to write. I think I've told everything about myself. I do not consider my life boring, because every day I come across something new and interesting for me. For example: meeting new people at university or meeting your best friends. It's all! Goodbye! bvd</p>
             </div>
-     
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
         <div class="w3-quarter w3-section">
             <span class="w3-xlarge">17</span><br>
@@ -111,10 +109,10 @@
             BD
         </div>
         <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">0+</span><br>
-          Clients
-      </div>
-  </div>
+        <span class="w3-xlarge">0+</span><br>
+        Clients
+    </div>
+</div>
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
@@ -195,39 +193,49 @@
         <p class="w3-center"><em>Ala-Too University</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
-          <div class="w3-col m4 w3-container">
-              <img src="img/qrcod.gif" class="w3-image w3-round" style="width:100%">
-          </div>
-          <div class="w3-col m8 w3-panel">
-              <div class="w3-large w3-margin-bottom">
-                  <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bishkek, KR<br>
-                  <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +996 709 62 11 40<br>
-                  <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kubanych.zh.u@gmail.com<br>
-              </div>
-              <p>You can come and to drink coffee <i class="fa fa-coffee"></i></p>
-          </div>
+        <div class="w3-col m4 w3-container">
+            <img src="img/qrcod.gif" class="w3-image w3-round" style="width:100%">
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bishkek, KR<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +996 709 62 11 40<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kubanych.zh.u@gmail.com<br>
+            </div>
+            <p>You can come and to drink coffee <i class="fa fa-coffee"></i></p>
         </div>
     </div>
 
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-      <h3 class="w3-center">MY GAME</h3>
+    <div class="w3-content w3-container w3-padding-64" id="game">
+    <h3 class="w3-center">MY GAME</h3>
 
-      <div class='topbar'>
-      </div>
-        <center class='center'>
-          <h1 id='total'>LB: 0</h1>
-          <h5 id="click" style="font-family:trebuchet MS;">LB/click: 1 | LB/sec: 0</h5>
-          <img class="round" src="img/clicker.png" width="150" onclick='clicked()'></img>
-          <br><br>
-          <button id='upgrade' class="round" onclick='upgrade("upgrade")' style="font-family:courier;">0-main upgrade: 15</button>
-          <br><br>
-          <button id='cat' class="round" onclick='upgrade("clicker cat")' style="font-family:courier;">0-clicker cat: 25 | +1/sec</button>
-          <br><br>
-          <button id='worker' class="round" onclick='upgrade("worker")' style="font-family:courier;">0-worker: 250 | +15/sec</button><br><br>
-          <button class="settings" onclick="save()">Save</button>
-          <button class="settings" onclick="load()">Load</button>
-          <button class="settings" onclick="reset()">Reset</button><br><br>
-        </center>
+    <div class='topbar'>
+    </div>
+        <div class='center'>
+            <h1 id='total'>LB: 0</h1>
+            <h5 id="click" style="font-family:trebuchet MS;">LB/click: 1 | LB/sec: 0</h5>
+            <img class="round" src="img/clicker.png" width="150" onclick='clicked()'></img>
+            <br><br>
+            <button id='upgrade' class="round" onclick='upgrade("upgrade")' style="font-family:courier;">0-main upgrade: 15</button>
+            <br><br>
+            <button id='cat' class="round" onclick='upgrade("clicker cat")' style="font-family:courier;">0-clicker cat: 25 | +1/sec</button>
+            <br><br>
+            <button id='worker' class="round" onclick='upgrade("worker")' style="font-family:courier;">0-worker: 250 | +15/sec</button><br><br>
+            <button class="settings" onclick="save()">Save</button>
+            <button class="settings" onclick="load()">Load</button>
+            <button class="settings" onclick="reset()">Reset</button><br><br>
+        </div>
+
+        <div class="youtube">
+      <iframe
+        &autoplay="1."
+        src="https://www.youtube.com/embed/cpP-fCo8Dn4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
 
 
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
@@ -239,5 +247,3 @@
             <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
     <!-- Footer end. -->
     </footer>
-
-    
