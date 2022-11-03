@@ -15,5 +15,14 @@ function myFunction() {
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+x.className = x.className.replace(" w3-show", "");
+} 
 
-}
+
+
+  window.console = window.console || function(t) {};
+
+
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
